@@ -1,0 +1,45 @@
+body {
+  background-image: url("../svg/pokebg.svg"); /*no-repeat center center fixed; */
+  background-size: 1400px 740px;
+  background-color: white;
+  font-family: 'Sriracha', cursive;
+  color: blue;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+}
+
+@keyframes color-change {
+  0% {
+    fill: red;
+  }
+
+  50% {
+    fill: blue;
+  }
+
+  100% {
+    fill: green;
+  }
+}
+
+.eyes {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
+@keyframes left-leg-stamp {
+  /* to move the smaller cloud from left to right */
+  from {
+    transform: translate(0px, 40px);
+  }
+
+  to {
+    transform: translate(0px, 80px);
+  }
+}
+
+.left-leg {
+  animation: 30s left-leg-stamp infinite alternate linear;
+}
