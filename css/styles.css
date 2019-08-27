@@ -1,13 +1,19 @@
 body {
-  background-image: url("../svg/pokebg.svg"); /*no-repeat center center fixed; */
-  background-size: 1400px 740px;
+  /* Var() function to use the CSS variable declared under the pseudo class :root */
+  /*background-image: url("../img/pokebg.svg"); /*no-repeat center center fixed; */
+  /*background-size: 1400px 740px;*/
   background-color: white;
   font-family: 'Sriracha', cursive;
   color: blue;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
-  display: inline-block;
+}
+
+.poke {
+  float: ; /* image will be placed on left side with regard to the child item */
+  max-width: 100%;
+  text-align: center;
 }
 
 @keyframes color-change {
@@ -36,10 +42,43 @@ body {
   }
 
   to {
-    transform: translate(0px, 80px);
+    transform: translate(0px, 60px);
   }
 }
 
 .left-leg {
-  animation: 30s left-leg-stamp infinite alternate linear;
+  animation: .5s left-leg-stamp infinite alternate linear;
+}
+
+@keyframes tail-2-shake {
+  /* to move the smaller cloud from left to right */
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(20px, 20px);
+  }
+}
+
+.tail-2 {
+  animation: .5s tail-2-shake infinite alternate linear;
+}
+
+@keyframes tail-2-color-change {
+  0% {
+    fill: #ffd700;
+  }
+
+  50% {
+    fill: #ff8f32;
+  }
+
+  100% {
+    fill: #ff7400;
+  }
+}
+
+.tail-2 {
+  animation: 4s tail-2-color-change infinite alternate linear;
 }
