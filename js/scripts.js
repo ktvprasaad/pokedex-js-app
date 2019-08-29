@@ -43,11 +43,16 @@ var repository = [
   }
 ];
 
+var tallestPokemon = {
+  name: ' ',
+  height: 0,
+};
+
 for (var i = 0; i < repository.length; i++) {
-  document.write(repository[i].name + ' \(height: ' + repository[i].height + '\)\n');
-  var pokeHeight = repository[i].height;
-  var pokeWeight = repository[i].weight;
-  if (pokeHeight > 1 && pokeWeight > 10) {
-    document.write(' - Wow that\'s really a big one!\n');
+  document.write(repository[i].name)
+  if (repository[i].height > tallestPokemon.height) {
+    tallestPokemon = repository[i]
   }
 }
+
+document.write('The tallest pokeman is ' + tallestPokemon.name + '. It\'s height is ' + tallestPokemon.height + '!')
