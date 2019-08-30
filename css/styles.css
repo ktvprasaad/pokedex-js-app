@@ -6,13 +6,19 @@ body {
   font-family: 'Sriracha', cursive;
   color: blue;
   font-weight: 400;
-  font-size: 24px;
+  margin: 10px;
+  /*font-size: 16px;*/
   line-height: 1;
 }
 
-.poke {
+ul {
+    list-style-type: none;
+}
+
+.pokey {
   float: ; /* image will be placed on left side with regard to the child item */
-  max-width: 100%;
+  max-width: 500px;
+  height: 200px;
   text-align: center;
 }
 
