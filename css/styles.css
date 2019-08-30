@@ -11,6 +11,10 @@ body {
   line-height: 1;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 ul {
     list-style-type: none;
 }
