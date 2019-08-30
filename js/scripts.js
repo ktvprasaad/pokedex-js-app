@@ -48,11 +48,19 @@ var tallestPokemon = {
   height: 0,
 };
 
-for (var i = 0; i < repository.length; i++) {
-  document.write(repository[i].name)
-  if (repository[i].height > tallestPokemon.height) {
-    tallestPokemon = repository[i]
-  }
-}
+repositoryProperty=Object.keys(repository[0]);
+const dash = '--------------------------------';
 
-document.write('The tallest pokeman is ' + tallestPokemon.name + '. It\'s height is ' + tallestPokemon.height + '!')
+document.write('<h2>Pokemon Repository</h2>');
+
+repository.forEach(function(pokemonProperty){
+  Object.keys(pokemonProperty).forEach(function(property){
+    if (property === repositoryProperty[0]) {
+      document.write('<strong>' + property + ' : ' + pokemonProperty[property] + '</strong><br>')
+    } else if (property === repositoryProperty[(repositoryProperty.length)-1]) {
+      document.write(property + ' : ' + pokemonProperty[property] + '<br>' + dash + '<br>')
+    } else {
+      document.write(property + ' : ' + pokemonProperty[property] + '<br>')
+    }
+  })
+});
