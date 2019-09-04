@@ -48,19 +48,18 @@ var tallestPokemon = {
   height: 0,
 };
 
-repositoryProperty=Object.keys(repository[0]);
+var repositoryProperty=Object.keys(repository[0]);
 const dash = '--------------------------------';
 
 document.write('<h2>Pokemon Repository</h2>');
 
-repository.forEach(function(pokemonProperty){
-  Object.keys(pokemonProperty).forEach(function(property){
-    if (property === repositoryProperty[0]) {
-      document.write('<strong>' + property + ' : ' + pokemonProperty[property] + '</strong><br>')
-    } else if (property === repositoryProperty[(repositoryProperty.length)-1]) {
-      document.write(property + ' : ' + pokemonProperty[property] + '<br>' + dash + '<br>')
+repository.forEach(function (pokemon) {
+  Object.keys(pokemon).forEach(function(property, index) {
+    if (index === 0) {
+      document.write(`<strong>${property}: ${pokemon[property]}</strong><br>`);
     } else {
-      document.write(property + ' : ' + pokemonProperty[property] + '<br>')
+      document.write(`${property}: ${pokemon[property]}<br>`);
     }
-  })
+  });
+  document.write('--------------------------------<br>');
 });
