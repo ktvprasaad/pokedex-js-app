@@ -1,24 +1,82 @@
 body {
-  /* Var() function to use the CSS variable declared under the pseudo class :root */
-  /*background-image: url("../img/pokebg.svg"); /*no-repeat center center fixed; */
-  /*background-size: 1400px 740px;*/
   background-color: white;
   font-family: 'Sriracha', cursive;
-  color: blue;
+  color: navy;
   font-weight: 400;
-  margin: 10px;
-  /*font-size: 16px;*/
   line-height: 1;
+  width: 300px;
 }
-
+div {
+  margin: 10px;
+  border: 2px solid black;
+}
 h2 {
-    text-decoration: underline;
+  margin-left: 40px;
+  text-decoration: none;
+}
+ul > li {
+  list-style-type: none;
+  display: block;
+}
+button {
+  background-image: linear-gradient(yellowgreen,beige);	
+  text-align: center;
+  border: 1px solid lightgreen;
+}
+.newButton {
+  background-image: linear-gradient(skyblue,beige);	
+  text-align: left;
+  border: 1px solid royalblue;
+}
+button, .newButton {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+button:hover, .newButton:hover {
+  cursor: pointer;
+  background: royalblue;
+  color: white;
+}
+@media all and (max-width: 500px) {
+  div {
+    margin: 5px;
+    border: none;
+  }
+  h2 {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  button {
+    background-image: linear-gradient(yellowgreen,beige);	
+    text-align: center;
+    border: .5px solid lightgreen;
+  }
+  .newButton {
+    background-image: linear-gradient(skyblue,beige);	
+    text-align: left;
+    border: .5px solid royalblue;
+  }
+  button, .newButton {
+    font-size: 12px;
+    width: 150px;
+    padding: 5px;
+    margin: 3px;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  h2 {
+    margin-left: 30px;
+    text-decoration: none;
+  }
 }
 
-ul {
-    list-style-type: none;
+@media all and (max-width: 750px) {
+  h2 {
+    margin-left: 40px;
+    text-decoration: none;
+  }
 }
-
 .pokey {
   float: ; /* image will be placed on left side with regard to the child item */
   max-width: 500px;
@@ -30,11 +88,11 @@ ul {
   0% {
     fill: red;
   }
-
+  
   50% {
     fill: blue;
   }
-
+  
   100% {
     fill: green;
   }
@@ -50,7 +108,7 @@ ul {
   from {
     transform: translate(0px, 40px);
   }
-
+  
   to {
     transform: translate(0px, 60px);
   }
@@ -65,7 +123,7 @@ ul {
   from {
     transform: translate(0px, 0px);
   }
-
+  
   to {
     transform: translate(20px, 20px);
   }
@@ -79,11 +137,11 @@ ul {
   0% {
     fill: #ffd700;
   }
-
+  
   50% {
     fill: #ff8f32;
   }
-
+  
   100% {
     fill: #ff7400;
   }
