@@ -4,7 +4,7 @@ body {
   color: navy;
   font-weight: 400;
   line-height: 1;
-  width: 300px;
+  max-width: 350px;
 }
 div {
   margin: 10px;
@@ -16,7 +16,16 @@ h2 {
 }
 ul > li {
   list-style-type: none;
-  display: block;
+  /*display: block;*/
+}
+li {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  max-width: 36px;
+  max-height: 40px;
+  margin: 2px;
 }
 button {
   background-image: linear-gradient(yellowgreen,beige);	
