@@ -56,6 +56,10 @@ var pokemonRepository = (function () {
     /* To append button element to list */
     listItemElement.appendChild(buttonElement);
     buttonElement.classList.add('newButton');
+    var img = document.createElement('img');
+    img.src = `img/${pokemon}.png`;
+    img.alt = `${pokemon} image`;
+    listItemElement.insertBefore(img,buttonElement);
     /* To append 'button' element as a child to the 'li'st element */
     //listItemElement.appendChild(buttonElement);
     /* To append 'li'st element as a child 'ul' element */
