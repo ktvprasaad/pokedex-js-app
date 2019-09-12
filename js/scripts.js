@@ -64,14 +64,24 @@ var pokemonRepository = (function () {
     //listItemElement.appendChild(buttonElement);
     /* To append 'li'st element as a child 'ul' element */
     $ul.appendChild(listItemElement);
-    buttonElement.addEventListener('click', function(event){
-      showDetails(event,pokemon);
+    // buttonElement.addEventListener('click', function(event){
+    //   showDetails(event,pokemon);
+    // }); the same action is performed in a separate function as follows
+    callListener(buttonElement, pokemon);
+  }
+
+  function callListener(button, pokemon) {
+    button.addEventListener('click',function(event) {
+      showDetails(event, pokemon);
     });
   }
 
   function showDetails(event, pokemon) {
+    /* To add or remove 'button' class */
     event.target.classList.toggle('button');
+    /* To add or remove 'newButton' class */
     event.target.classList.toggle('newButton');
+    /* var $target = event.target */
     if (event.target.classList.contains('newButton')) {
       event.target.innerText = pokemon;
     } else {
@@ -84,6 +94,7 @@ var pokemonRepository = (function () {
     add: add,
     getAll: getAll,
     addListItem: addListItem,
+    callListener: callListener,
     showDetails: showDetails
   };
 })();
