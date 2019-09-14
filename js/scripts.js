@@ -1,7 +1,5 @@
 //IIFE - Immeditaly Invoked Function Expression --> (function() {})();
 var pokemonRepository = (function () {
-      weight: 9,
-      types: ['water'],
   var repository = [];
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
 
