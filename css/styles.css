@@ -22,18 +22,21 @@ li {
   display: flex;
   flex-direction: row;
 }
+.load {
+  display: none;
+}
 img {
   max-width: 36px;
   max-height: 40px;
   margin: 2px;
 }
 button {
-  background-image: linear-gradient(yellowgreen,beige);	
+  background-image: linear-gradient(yellowgreen,beige);
   text-align: center;
   border: 1px solid lightgreen;
 }
 .newButton {
-  background-image: linear-gradient(skyblue,beige);	
+  background-image: linear-gradient(skyblue,beige);
   text-align: left;
   border: 1px solid royalblue;
 }
@@ -57,12 +60,12 @@ button:hover, .newButton:hover {
     text-decoration: none;
   }
   button {
-    background-image: linear-gradient(yellowgreen,beige);	
+    background-image: linear-gradient(yellowgreen,beige);
     text-align: center;
     border: .5px solid lightgreen;
   }
   .newButton {
-    background-image: linear-gradient(skyblue,beige);	
+    background-image: linear-gradient(skyblue,beige);
     text-align: left;
     border: .5px solid royalblue;
   }
@@ -97,11 +100,11 @@ button:hover, .newButton:hover {
   0% {
     fill: red;
   }
-  
+
   50% {
     fill: blue;
   }
-  
+
   100% {
     fill: green;
   }
@@ -117,7 +120,7 @@ button:hover, .newButton:hover {
   from {
     transform: translate(0px, 40px);
   }
-  
+
   to {
     transform: translate(0px, 60px);
   }
@@ -132,7 +135,7 @@ button:hover, .newButton:hover {
   from {
     transform: translate(0px, 0px);
   }
-  
+
   to {
     transform: translate(20px, 20px);
   }
@@ -146,11 +149,11 @@ button:hover, .newButton:hover {
   0% {
     fill: #ffd700;
   }
-  
+
   50% {
     fill: #ff8f32;
   }
-  
+
   100% {
     fill: #ff7400;
   }
