@@ -84,6 +84,7 @@ var pokemonRepository = (function () {
     return fetch(url).then(function(response) {
       return response.json();
     }).then(function(details) {
+        // console.log(details); would print particular pokemon (object)'s detail
         pokemon.imageUrl = details.sprites.front_default;
         pokemon.height= details.height;
         pokemon.types = Object.keys(details.types);
