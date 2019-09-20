@@ -12,10 +12,10 @@ body {
   margin: 2px;
   padding: 2px;
 }
-div {
+/* div {
   margin: 10px;
   border: 2px solid tomato;
-}
+} */
 h2 {
   margin-left: 40px;
   text-decoration: none;
@@ -108,10 +108,10 @@ button:hover {
 }
 
 @media all and (max-width: 500px) {
-  div {
+  /* div {
     margin: 5px;
     border: 1px solid tomato;
-  }
+  } */
   h2 {
     margin-left: 10px;
     text-decoration: none;
