@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   font-family: 'Sriracha', cursive;
@@ -5,6 +8,9 @@ body {
   font-weight: 400;
   line-height: 1;
   max-width: 350px;
+  border: 1px;
+  margin: 2px;
+  padding: 2px;
 }
 div {
   margin: 10px;
@@ -38,7 +44,7 @@ button {
   padding: 10px;
   margin: 5px;
 }
-button:hover, .newButton:hover {
+button:hover {
   cursor: pointer;
   background: royalblue;
   color: white;
@@ -76,7 +82,7 @@ button:hover, .newButton:hover {
   width: 100%;
   max-width: 700px;
   text-align: left;
-  border: 2px solid royalblue;
+  border: 1px solid royalblue;
 }
 
 .modal-close {
@@ -85,14 +91,15 @@ button:hover, .newButton:hover {
   border: 0;
   background: none;
   color: #777;
-  text-decoration: underline;
+  text-decoration: none;
   width: auto;
+  border-radius: 50%;
 }
 
 .modal > img {
   float: left;
 }
-/* .modal h1 {
+.modal h2 {
   margin-top: 0;
 } */
 
@@ -103,7 +110,7 @@ button:hover, .newButton:hover {
 @media all and (max-width: 500px) {
   div {
     margin: 5px;
-    border: none;
+    border: 1px solid tomato;
   }
   h2 {
     margin-left: 10px;
